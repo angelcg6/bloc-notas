@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Instrument+Serif&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Nunito:wght@600;700&display=swap">
 <style>
 :root{
   --bg:#f3f1ec; --page:#fbfaf7; --surface:#fff; --ink:#22201c; --muted:#7d786f; --line:#e5e1d8; --accent:#5b5fe0; --accent-soft:#e3e4fb; --fab:#5b5fe0; --danger:#d93025;
@@ -37,7 +37,7 @@ button{cursor:pointer}
 .icon:hover{background:color-mix(in srgb,var(--ink) 8%,transparent)}
 .icon svg{width:24px;height:24px;fill:currentColor}
 header,main{max-width:900px;margin:0 auto;padding-left:20px;padding-right:20px}
-header{padding-top:10px;padding-bottom:28px}
+header{padding-top:36px;padding-bottom:28px}
 .row1{display:flex;justify-content:space-between;align-items:center;min-height:60px}
 .acts{display:flex}
 h1{margin:28px 0 0;font-size:38px;font-weight:500;letter-spacing:-.01em;line-height:1.15}
@@ -111,8 +111,9 @@ button{touch-action:manipulation}
 .content{overscroll-behavior:contain}
 @media (max-width:600px){
   header,main{padding-left:16px;padding-right:16px}
+  header{padding-top:26px}
   .mark{width:38px;height:36px}
-  .wm{font-size:40px}
+  .wm{font-size:36px}
   .note{padding:16px 20px 14px}
   #title{font-size:24px;padding:6px 18px 2px}
   .page{padding:4px 18px 48px}
@@ -127,7 +128,7 @@ button{touch-action:manipulation}
 @media (min-width:760px){.tools{flex-wrap:wrap;justify-content:center;overflow:visible}}
 .brand{display:flex;align-items:center;gap:12px;color:var(--ink);margin:0;font-weight:400}
 .mark{width:46px;height:43px;flex:none}
-.wm{font-family:"Instrument Serif","Cormorant Garamond",Georgia,"Times New Roman",serif;font-size:48px;line-height:1;letter-spacing:-.01em;padding-bottom:5px}
+.wm{font-family:Nunito,"Varela Round","Segoe UI Rounded",system-ui,sans-serif;font-weight:700;font-size:42px;line-height:1;letter-spacing:-.025em;padding-bottom:3px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
