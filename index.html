@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Quicksand:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
 <style>
 :root{
   --bg:#f3f1ec; --page:#fbfaf7; --surface:#fff; --ink:#22201c; --muted:#7d786f; --line:#e5e1d8; --accent:#5b5fe0; --accent-soft:#e3e4fb; --fab:#5b5fe0; --danger:#d93025;
@@ -112,8 +112,7 @@ button{touch-action:manipulation}
 @media (max-width:600px){
   header,main{padding-left:16px;padding-right:16px}
   header{padding-top:26px}
-  .mark{width:38px;height:36px}
-  .wm{font-size:36px}
+  .row1 .logo{height:36px}
   .note{padding:16px 20px 14px}
   #title{font-size:24px;padding:6px 18px 2px}
   .page{padding:4px 18px 48px}
@@ -127,15 +126,14 @@ button{touch-action:manipulation}
 .gi svg{width:20px;height:20px;fill:currentColor}
 @media (min-width:760px){.tools{flex-wrap:wrap;justify-content:center;overflow:visible}}
 .brand{display:flex;align-items:center;gap:12px;color:var(--ink);margin:0;font-weight:400}
-.mark{width:46px;height:43px;flex:none}
-.wm{font-family:Quicksand,"Varela Round","Segoe UI Rounded",system-ui,sans-serif;font-weight:500;font-size:42px;line-height:1;letter-spacing:-.02em;padding-bottom:3px}
+.logo{height:42px;width:auto;display:block;overflow:visible}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <header>
   <div class="row1">
-    <h1 class="brand"><svg class="mark" viewBox="0 0 34 32" aria-hidden="true"><path d="M7 3v26" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" fill="none"/><path d="M13 17q3.5-7 7 0t7 0 7 0" stroke="var(--accent)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span class="wm">Glosa</span></h1>
+    <h1 class="brand"><svg class="logo" viewBox="0 -43 214 58" role="img" aria-label="Glosa"><defs><path id="gl-g" d="M24 -12A12 12 0 1 0 0 -12A12 12 0 1 0 24 -12M24 -24V0Q24 12 12 12Q6 12 3 9"/><path id="gl-l" d="M1.5 -40V0"/><path id="gl-o" d="M24 -12A12 12 0 1 0 0 -12A12 12 0 1 0 24 -12Z"/><path id="gl-s" d="M21 -19Q18 -24 12 -24Q4 -24 4 -18Q4 -13 12 -12Q20 -11 20 -6Q20 0 12 0Q6 0 3 -5"/><path id="gl-a" d="M24 -12A12 12 0 1 0 0 -12A12 12 0 1 0 24 -12M24 -24V0"/></defs><rect x="1.5" y="-26" width="54" height="28" rx="14" fill="none" stroke="currentColor" stroke-width="3"/><path d="M13 -12q4-7 8 0t8 0 8 0 8 0" fill="none" stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(72 0)"><use href="#gl-g"/><use href="#gl-l" x="36"/><use href="#gl-o" x="47"/><use href="#gl-s" x="81"/><use href="#gl-a" x="115"/></g></svg></h1>
     <div class="acts">
     <button class="icon" id="theme" aria-label="Cambiar tema" title="Cambiar tema"><svg viewBox="0 0 24 24"><path id="themeIcon" d=""/></svg></button>
     <button class="icon" id="more" aria-label="Más opciones" title="Más opciones"><svg viewBox="0 0 24 24"><path d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg></button>
