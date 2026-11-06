@@ -1,6 +1,6 @@
 // Service worker: permite usar la app sin conexión.
 // Si cambias algún archivo, sube el número de versión para que se actualice.
-const CACHE = "notas-v4";
+const CACHE = "notas-v5";
 const ARCHIVOS = ["./", "index.html", "manifest.json", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {
